@@ -1,0 +1,17 @@
+Project Name: Student-Library Card
+
+Description:
+In this mini project, a One-to-One relationship will be established between students and their library cards.
+Each student can have only one library card, and each library card can belong to only one student.
+
+Features:
+
+Create Student and Library Card classes.
+The Student class should contain basic information about the student (ID, first name, last name).
+The Library Card class should contain information related to the card (ID, expiration date, student reference).
+Establish a One-to-One relationship between the Student and Library Card classes.
+Create a class to save student and library card objects to the database using Hibernate.
+Create a class to fetch student and library card objects from the database using Hibernate.
+This project will be able to perform database operations using Hibernate,
+implementing the One-to-One relationship between students and library cards.
+You can successfully develop the project in accordance with these features.
