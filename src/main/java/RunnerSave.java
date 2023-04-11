@@ -1,6 +1,4 @@
 
-//This class creates Student and LibraryCard objects, sets up their relationships, and saves the objects to the database.
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -9,12 +7,6 @@ import org.hibernate.cfg.Configuration;
 import java.time.LocalDate;
 
 public class RunnerSave {
-
-//    We assigned the non-owner class (LibraryCard) objects to the owner class (Student) objects.
-//    This establishes the association between a student and their library card.
-//    With this setup, when you retrieve a student object from the database,
-//    you can also access the associated library card object.
-//    This allows you to create a relationship between two classes using Hibernate's One-to-One relationship feature.
 
     public static void main(String[] args) {
 
@@ -49,13 +41,8 @@ public class RunnerSave {
 
         // Set up the relationship between Student and LibraryCard objects
         student01.setLibraryCard(libraryCard01);
-        libraryCard01.setStudent(student01);
-
         student02.setLibraryCard(libraryCard02);
-        libraryCard02.setStudent(student02);
-
         student03.setLibraryCard(libraryCard03);
-        libraryCard03.setStudent(student03);
 
         // Hibernate configuration and create SessionFactory
         Configuration con = new Configuration().

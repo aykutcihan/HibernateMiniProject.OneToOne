@@ -1,6 +1,4 @@
 
-// This class retrieves student and library card objects from the database and prints them to the screen.
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
